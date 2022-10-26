@@ -7,7 +7,7 @@ function calculation(v){
     history.appendChild(para);
     return eval(v);
 }
-
+//Função para Apagar
 function backspace(b){
     return b.slice(0, b.length-1);
 }
