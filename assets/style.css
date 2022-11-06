@@ -17,7 +17,7 @@ body {
 }
 
 .nav {
-    position: absolute;
+    position: relative;
     height: 60px;
     width: 521px;
     text-align: center;
@@ -26,7 +26,7 @@ body {
 }
 
 .nav .nav-flooter {
-    position: relative;
+    position: absolute;
     top: 10px;
     bottom: 10px;
 }
@@ -122,15 +122,15 @@ body {
 
 
 
-@media (max-width: 390px) {
+@media (max-width: 594px) {
 
     .nav {
         position: absolute;
         height: 60px;
-        width: 96.5%;
+        width: 100%;
         text-align: center;
         background: #393e46;
-        top: 21.7%;
+        top: 13.2%;
     }
 
     .nav .nav-flooter {
