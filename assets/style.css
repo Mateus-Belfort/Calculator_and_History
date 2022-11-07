@@ -10,51 +10,44 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #182c61;
+    background: #0f059bda;
 }
 
 .nav {
-    position: absolute;
-    height: 60px;
-    width: 521px;
-    text-align: center;
+    width: 75%;
     background: #393e46;
-    top: 27.6%;
-}
-
-.nav .nav-flooter {
-    position: relative;
-    top: 10px;
-    bottom: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
 .nav-flooter h1 {
     color: #eee;
     text-shadow: 0.1em 2px 0.2em #4b7bec;
-    margin: 0 auto;
-    padding: 1px;
+    padding: 20px;
     text-align: center;
     font-size: 36px;
 }
 
 .calculator {
-    width: 240px;
+    width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 
 .calculator span {
-    width: 61px;
-    height: 61px;
+    width: 100%;
+    height: 62px;
     line-height: 61px;
     text-align: center;
     background: #eee;
     font-size: 1.2em;
     color: #333;
+    border: 0.3px solid rgba(0, 0, 0, 0.486);
     font-weight: 500;
 }
 
@@ -76,31 +69,32 @@ body {
 
 .calculator .inputArea {
     grid-column: span 4;
+    height: 100px;
     padding: 20px 10px;
     outline: none;
     border: none;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .calculator .plus {
     grid-row: span 2;
-    height: 122px;
+    height: 124px;
     line-height: 120px;
 }
 
 .calculator .equal {
-    width: 122px;
+    width: 100%;
     grid-column: span 2;
     background: #4b7bec;
     font-size: 1.8em;
 }
 
 #history {
-    width: 280px;
+    width: 75%;
     height: 371.2px;
     overflow-y: scroll;
     font-size: 1.1em;
-    background: #4b7bec;
+    background: #304983;
     box-sizing: border-box;
     padding: 10px 20px;
 }
@@ -118,45 +112,4 @@ body {
     font-size: 1.0em;
     font-weight: 500;
     color: #eee;
-}
-
-
-
-@media (max-width: 594px) {
-
-    .nav {
-        position: absolute;
-        height: 60px;
-        width: 100%;
-        text-align: center;
-        background: #393e46;
-        top: 13.2%;
-    }
-
-    .nav .nav-flooter {
-        position: relative;
-        top: 15px;
-    }
-
-    .nav-flooter h1 {
-        color: #eee;
-        text-shadow: 0.1em 0.2em 0.2em #4b7bec;
-        font-size: 28px;
-    }
-
-    #history {
-        max-width: 135px;
-        height: 371.2px;
-        overflow-y: scroll;
-        font-size: 12px;
-        background: #4b7bec;
-        box-sizing: border-box;
-        padding: 20px 5px;
-    }
-
-    #history p:last-child {
-        font-size: 12px;
-        font-weight: 300;
-        color: #eee;
-    }
 }
